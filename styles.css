@@ -1,58 +1,122 @@
+
 body {
 	font-family: 'Segoe UI', Arial, sans-serif;
-	background: #f4f6fb;
+	background: linear-gradient(120deg, #e0e7ff 0%, #f4f6fb 100%);
 	margin: 0;
 	color: #222;
 }
 
 header {
-	background: #2d6cdf;
-	color: #fff;
-	padding: 2rem 0 1rem 0;
+	position: relative;
 	text-align: center;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	padding: 2.5rem 0 1.5rem 0;
+	color: #fff;
+	overflow: hidden;
+}
+
+.header-gradient {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: linear-gradient(90deg, #2d6cdf 0%, #6a8dff 100%);
+	z-index: -1;
+	opacity: 0.95;
+}
+
+header h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 0.5rem;
+	animation: fadeInDown 1s;
+}
+
+.subtitle {
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-top: 0.5rem;
+	animation: fadeInUp 1.2s;
+}
+
+.highlight {
+	background: linear-gradient(90deg, #ffe066 0%, #ffb347 100%);
+	color: #222;
+	padding: 0.2em 0.5em;
+	border-radius: 6px;
 }
 
 main {
 	max-width: 700px;
-	margin: 2rem auto;
+	margin: 2.5rem auto;
+	padding: 0 1rem;
+}
+
+.card {
 	background: #fff;
-	border-radius: 12px;
-	box-shadow: 0 4px 24px rgba(44, 76, 130, 0.08);
-	padding: 2rem;
+	border-radius: 16px;
+	box-shadow: 0 6px 32px rgba(44, 76, 130, 0.10);
+	padding: 2rem 1.5rem;
+	margin-bottom: 2rem;
+	transition: box-shadow 0.3s;
+	animation: fadeInCard 1.2s;
+}
+
+.card:hover {
+	box-shadow: 0 12px 48px rgba(44, 76, 130, 0.18);
 }
 
 .intro h2, .features h2, .chat-demo h2 {
 	color: #2d6cdf;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
 }
 
 .features ul {
-	list-style: disc inside;
-	margin: 1rem 0 2rem 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0 2rem 0;
+}
+.features li {
+	font-size: 1.1rem;
+	margin-bottom: 0.8em;
+	display: flex;
+	align-items: center;
+	gap: 0.7em;
 }
 
 .chat-container {
 	background: #eef2fa;
-	border-radius: 8px;
-	padding: 1rem;
+	border-radius: 12px;
+	padding: 1.2rem;
 	margin-top: 1rem;
 	box-shadow: 0 2px 8px rgba(44, 76, 130, 0.05);
+	display: flex;
+	flex-direction: column;
+	gap: 0.7em;
 }
 
 .chat-message {
 	margin: 0.5rem 0;
-	padding: 0.75rem 1rem;
-	border-radius: 20px;
-	max-width: 80%;
-	font-size: 1rem;
-	line-height: 1.5;
+	padding: 0.85rem 1.2rem;
+	border-radius: 24px;
+	max-width: 85%;
+	font-size: 1.05rem;
+	line-height: 1.6;
+	display: flex;
+	align-items: center;
+	gap: 0.7em;
+	box-shadow: 0 2px 8px rgba(44, 76, 130, 0.07);
+	animation: fadeInChat 1.3s;
 }
 
 .chat-message.user {
-	background: #2d6cdf;
+	background: linear-gradient(90deg, #2d6cdf 0%, #6a8dff 100%);
 	color: #fff;
 	align-self: flex-end;
 	margin-left: auto;
+	font-weight: 500;
 }
 
 .chat-message.bot {
@@ -61,12 +125,52 @@ main {
 	border: 1px solid #dbe5f7;
 	align-self: flex-start;
 	margin-right: auto;
+	font-weight: 400;
+}
+
+.chat-message i {
+	font-size: 1.2em;
+	margin-right: 0.5em;
 }
 
 footer {
 	text-align: center;
-	padding: 1rem 0;
+	padding: 1.2rem 0;
 	color: #888;
 	background: none;
-	font-size: 0.95rem;
+	font-size: 1rem;
+	letter-spacing: 0.5px;
+}
+
+@keyframes fadeInDown {
+	from { opacity: 0; transform: translateY(-30px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+	from { opacity: 0; transform: translateY(30px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInCard {
+	from { opacity: 0; transform: scale(0.95); }
+	to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeInChat {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+	main {
+		padding: 0 0.2rem;
+	}
+	.card {
+		padding: 1.2rem 0.5rem;
+	}
+	.chat-message {
+		font-size: 0.95rem;
+		padding: 0.7rem 0.7rem;
+	}
+	header h1 {
+		font-size: 1.5rem;
+	}
 }
