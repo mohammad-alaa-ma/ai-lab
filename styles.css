@@ -1,3 +1,97 @@
+/* Appliance section styles */
+.appliance-list {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	margin-top: 1rem;
+}
+.appliance-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+	font-size: 1rem;
+}
+.appliance-item img {
+	width: 64px;
+	height: 64px;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(44,76,130,0.10);
+	transition: transform 0.2s;
+}
+.appliance-item img:hover {
+	transform: scale(1.08);
+}
+
+/* How it works section */
+.how-it-works ol {
+	padding-left: 1.2em;
+	margin: 1em 0;
+	font-size: 1.08em;
+	color: #222;
+	line-height: 2.1;
+}
+/* Appliance horizontal slider */
+.appliance-slider {
+	overflow-x: auto;
+	white-space: nowrap;
+	padding-bottom: 1em;
+	margin-top: 1rem;
+}
+.appliance-list {
+	display: inline-flex;
+	gap: 2rem;
+	margin-top: 0;
+}
+.appliance-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+	font-size: 1rem;
+	min-width: 100px;
+	margin-right: 1.5rem;
+}
+
+/* Benefits section */
+.benefits ul {
+	list-style: none;
+	padding: 0;
+}
+.benefits li {
+	margin-bottom: 0.7em;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	font-size: 1.08em;
+}
+
+/* Branch card */
+.branch img {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 12px;
+	margin-bottom: 1em;
+	box-shadow: 0 2px 8px rgba(44,76,130,0.10);
+}
+
+/* Call to action button */
+.cta-btn {
+	display: inline-block;
+	background: linear-gradient(90deg, #2d6cdf 0%, #6a8dff 100%);
+	color: #fff;
+	font-weight: 600;
+	padding: 0.9em 2em;
+	border-radius: 32px;
+	text-decoration: none;
+	font-size: 1.1em;
+	box-shadow: 0 4px 16px rgba(44,76,130,0.12);
+	transition: background 0.2s, transform 0.2s;
+}
+.cta-btn:hover {
+	background: linear-gradient(90deg, #6a8dff 0%, #2d6cdf 100%);
+	transform: scale(1.05);
+}
 
 body {
 	font-family: 'Segoe UI', Arial, sans-serif;

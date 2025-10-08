@@ -15,31 +15,126 @@
 		<p class="subtitle">Powered by <span class="highlight">Retrieval-Augmented Generation (RAG)</span></p>
 	</header>
 	<main>
-		<section class="intro card">
-			<h2><i class="fa-solid fa-lightbulb"></i> What is RAG?</h2>
-			<p>RAG combines search and AI to answer your questions about electrical appliances. It checks our store data and replies in chat with product specs, available pieces, and the nearest branch for purchase.</p>
-		</section>
-		<section class="features card">
-			<h2><i class="fa-solid fa-gears"></i> How It Works</h2>
-			<ul>
-				<li><i class="fa-solid fa-comments"></i> Ask about any appliance in chat</li>
-				<li><i class="fa-solid fa-microchip"></i> Get instant specs and details</li>
-				<li><i class="fa-solid fa-store"></i> Find out which branches have it in stock</li>
-				<li><i class="fa-solid fa-location-dot"></i> Get directions to the nearest branch</li>
-			</ul>
-		</section>
-		<section class="chat-demo card">
-			<h2><i class="fa-solid fa-robot"></i> Chat Demo</h2>
-			<div class="chat-container">
-				<div class="chat-message user"><i class="fa-solid fa-user"></i> Where can I buy a Samsung fridge?</div>
-				<div class="chat-message bot"><i class="fa-solid fa-robot"></i> Specs: Samsung Fridge, 400L, Inverter, Silver.<br>Available at: Downtown Branch, City Mall Branch.<br>Nearest branch: Downtown Branch (2km away).</div>
-				<div class="chat-message user"><i class="fa-solid fa-user"></i> Do you have washing machines?</div>
-				<div class="chat-message bot"><i class="fa-solid fa-robot"></i> Yes! We have LG, Samsung, and Bosch washing machines in stock. Would you like specs or branch info?</div>
-			</div>
-		</section>
+				<section class="intro card">
+						<h2><i class="fa-solid fa-lightbulb"></i> What is RAG?</h2>
+						<p>RAG combines search and AI to answer your questions about electrical appliances. It checks our store data and replies in chat with product specs, available pieces, and the nearest branch for purchase.</p>
+				</section>
+
+				<div class="card appliances">
+						<h2><i class="fas fa-plug"></i> Popular Appliances</h2>
+						<div class="appliance-slider">
+							<div class="appliance-list">
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/fridge.png" alt="Fridge">
+									<span>Fridge</span>
+								</div>
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/washing-machine.png" alt="Washing Machine">
+									<span>Washing Machine</span>
+								</div>
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/microwave.png" alt="Microwave">
+									<span>Microwave</span>
+								</div>
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/tv.png" alt="TV">
+									<span>TV</span>
+								</div>
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/air-conditioner.png" alt="Air Conditioner">
+									<span>Air Conditioner</span>
+								</div>
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/oven.png" alt="Oven">
+									<span>Oven</span>
+								</div>
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/vacuum-cleaner.png" alt="Vacuum Cleaner">
+									<span>Vacuum Cleaner</span>
+								</div>
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/fan.png" alt="Fan">
+									<span>Fan</span>
+								</div>
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/toaster.png" alt="Toaster">
+									<span>Toaster</span>
+								</div>
+								<div class="appliance-item">
+									<img src="https://img.icons8.com/color/96/coffee-maker.png" alt="Coffee Maker">
+									<span>Coffee Maker</span>
+								</div>
+							</div>
+						</div>
+				</div>
+
+				<div class="card how-it-works">
+					<h2><i class="fas fa-lightbulb"></i> How It Works</h2>
+					<ol>
+						<li>Ask about an appliance in chat</li>
+						<li>Get specs and available models</li>
+						<li>Find the nearest branch to buy</li>
+					</ol>
+				</div>
+
+				<div class="card benefits">
+					<h2><i class="fas fa-check-circle"></i> Why Use Our RAG?</h2>
+					<ul>
+						<li><i class="fas fa-check"></i> Fast, accurate answers</li>
+						<li><i class="fas fa-check"></i> Personalized recommendations</li>
+						<li><i class="fas fa-check"></i> Easy branch finder</li>
+					</ul>
+				</div>
+
+				<div class="card branch">
+					<h2><i class="fas fa-map-marker-alt"></i> Find Nearest Branch</h2>
+					<img src="https://img.icons8.com/color/400/map.png" alt="Map" style="width:100%;max-width:300px;border-radius:12px;">
+					<p>Visit us at: <strong>123 Main St, City</strong></p>
+				</div>
+
+				<div style="text-align:center; margin:2rem 0;">
+					<a class="cta-btn" href="#chat-demo">Try the Chat Demo</a>
+				</div>
+
+				<section class="chat-demo card" id="chat-demo">
+						<h2><i class="fa-solid fa-robot"></i> Chat Demo</h2>
+						<div class="chat-container">
+								<div class="chat-message user"><i class="fa-solid fa-user"></i> Where can I buy a Samsung fridge?</div>
+								<div class="chat-message bot"><i class="fa-solid fa-robot"></i> Specs: Samsung Fridge, 400L, Inverter, Silver.<br>Available at: Downtown Branch, City Mall Branch.<br>Nearest branch: Downtown Branch (2km away).</div>
+								<div class="chat-message user"><i class="fa-solid fa-user"></i> Do you have washing machines?</div>
+								<div class="chat-message bot"><i class="fa-solid fa-robot"></i> Yes! We have LG, Samsung, and Bosch washing machines in stock. Would you like specs or branch info?</div>
+						</div>
+				</section>
 	</main>
-	<footer>
-		<p>&copy; 2025 Smart Appliance Finder</p>
-	</footer>
+		<footer>
+				<p>&copy; 2025 Smart Appliance Finder</p>
+		</footer>
+		<script>
+		// Auto-scroll for appliances slider with pause on hover
+		const slider = document.querySelector('.appliance-slider');
+		let scrollInterval;
+		let isHovered = false;
+
+		function startSliderScroll() {
+			scrollInterval = setInterval(() => {
+				if (!isHovered) {
+					slider.scrollLeft += 1;
+					// Loop back to start if reached end
+					if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth - 1) {
+						slider.scrollLeft = 0;
+					}
+				}
+			}, 16); // ~60fps
+		}
+
+		slider.addEventListener('mouseenter', () => {
+			isHovered = true;
+		});
+		slider.addEventListener('mouseleave', () => {
+			isHovered = false;
+		});
+
+		startSliderScroll();
+		</script>
 </body>
 </html>
