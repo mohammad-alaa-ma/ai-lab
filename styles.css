@@ -1,3 +1,58 @@
+.branch-subtitle {
+	font-size: 1.08em;
+	color: #23408e;
+	margin-bottom: 1em;
+	font-weight: 500;
+}
+.branch-map {
+	width: 100%;
+	max-width: 400px;
+	border-radius: 18px;
+	margin-bottom: 1.2em;
+	box-shadow: 0 4px 16px rgba(44,76,130,0.10);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.branch-address {
+	display: flex;
+	align-items: center;
+	gap: 0.7em;
+	background: #e0e7ff;
+	color: #1a237e;
+	font-weight: 600;
+	font-size: 1.12em;
+	padding: 0.7em 1.2em;
+	border-radius: 12px;
+	margin-bottom: 1em;
+	box-shadow: 0 2px 8px rgba(44,76,130,0.07);
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+.branch-address i {
+	color: #d32f2f;
+	font-size: 1.3em;
+}
+.branch-directions-btn {
+	display: inline-block;
+	background: linear-gradient(90deg, #2d6cdf 0%, #6a8dff 100%);
+	color: #fff;
+	font-weight: 600;
+	padding: 0.7em 1.5em;
+	border-radius: 24px;
+	text-decoration: none;
+	font-size: 1.08em;
+	box-shadow: 0 2px 8px rgba(44,76,130,0.10);
+	transition: background 0.2s, transform 0.2s;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5em;
+}
+.branch-directions-btn:hover {
+	background: linear-gradient(90deg, #6a8dff 0%, #2d6cdf 100%);
+	transform: scale(1.05);
+}
 /* Appliance section styles */
 .appliance-list {
 	display: flex;
@@ -95,7 +150,7 @@
 
 body {
 	font-family: 'Segoe UI', Arial, sans-serif;
-	background: linear-gradient(120deg, #e0e7ff 0%, #f4f6fb 100%);
+	background: linear-gradient(120deg, #f4f6fb 0%, #e0e7ff 60%, #cfd9ff 100%);
 	margin: 0;
 	color: #222;
 }
@@ -229,11 +284,37 @@ main {
 
 footer {
 	text-align: center;
-	padding: 1.2rem 0;
-	color: #888;
+	padding: 1.5rem 0 1rem 0;
 	background: none;
+}
+.footer-content {
+	color: #888;
 	font-size: 1rem;
 	letter-spacing: 0.5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+}
+.footer-content a {
+	color: #2d6cdf;
+	text-decoration: none;
+	margin: 0 0.2em;
+}
+.footer-content a:hover {
+	text-decoration: underline;
+}
+.footer-social {
+	margin-top: 0.5em;
+}
+.footer-social a {
+	color: #2d6cdf;
+	font-size: 1.3em;
+	margin: 0 0.4em;
+	transition: color 0.2s;
+}
+.footer-social a:hover {
+	color: #ffd600;
 }
 
 @keyframes fadeInDown {
